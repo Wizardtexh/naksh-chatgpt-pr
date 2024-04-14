@@ -188,8 +188,7 @@ def wait(bot, update, botname, username, new):
                 qcache = None
                 user = ""
                 username = 'nakshx_bot'
-        username = nakshx_bot'
-                botname = 'Harshit Ethic'
+                botname = 'naksh X BOT'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
