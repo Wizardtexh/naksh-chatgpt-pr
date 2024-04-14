@@ -292,6 +292,5 @@ def interact(bot, update, botname, username, new):
             update.message.reply_text(errstr)
 
 
-def error(bot, update):
-    """Log Errors caused by Updates."""
+
     
