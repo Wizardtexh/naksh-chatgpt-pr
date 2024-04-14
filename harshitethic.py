@@ -1,13 +1,13 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler,"Filters"
+from telegram.ext import Updater, CommandHandler, MessageHandler
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from datetime import datetime
 import json, os, string, sys, threading, logging, time, re, random
 import openai
 
 #OpenAI API key
-aienv = os.getenv('OPENAI_KEY')
+aienv = os.getenv('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')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "22152362"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = "6656491555:AAFn5l0NeRvwWhoeWnz7NyloeMgz17WyUOc"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -33,8 +33,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'naksh x BOT'
+username = 'nakshx_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -64,8 +64,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'naksh X BOT'
+        username = 'nakshx_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -126,12 +126,13 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
+        botname = 'naksh X BOT'
+        username = 'nakshx_bot''
         username = 'harshitethic_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
-        update.message.reply_text('I am currently talking to someone else. Can you please wait ' + left + ' seconds?')
+        update.message.reply_text('ABE ITNI BKC MT KR BSDK KUCH PDH V LIYE KR KUCH SIKH LE NAKSH PAPA SE. Can you please wait ' + left + ' seconds?')
         return
 
 def runn(bot, update):
@@ -187,7 +188,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'harshitethic_bot'
+                username = 'nakshx_bot'
+        username = nakshx_bot'
                 botname = 'Harshit Ethic'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
@@ -277,7 +279,7 @@ def interact(bot, update, botname, username, new):
             print("Sentiment of output:\n")
             print(vs)
         if vs['neg'] > 1:
-            update.message.reply_text('I do not think I could provide you a good answer for this. Use /retry to get positive output.')
+            update.message.reply_text('DEKHLE MERI JITNI AUKAD THI MENE BTA DIYA AAGE TU PDH LE AUR GRP JOIN KRLIYO WRNA MA CHOD DUNGA BY FUCK UHH. Use /retry to get positive output.')
             return
         update.message.reply_text(out)
         chat_log = append_interaction_to_chat_log(username, botname, question, answer, chat_log)
