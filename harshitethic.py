@@ -66,7 +66,7 @@ def start(bot, update):
         qcache = None
         botname = 'naksh X BOT'
         username = 'nakshx_bot'
-        update.message.reply_text('Hi')
+        update.message.reply_text('BOL BEHN KE LAUDE AAGYI YAD')
         return 
     else:
         update.message.reply_text('I am currently talking to someone else. Can you please wait ' + left + ' seconds?')
@@ -91,16 +91,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'naksh X BOT'
+        username = 'nakshx_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'naksh X BOT'
+        username = 'nakshx_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
