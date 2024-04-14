@@ -127,8 +127,7 @@ def retry(bot, update):
         cache = None
         qcache = None
         botname = 'naksh X BOT'
-        username = 'nakshx_bot''
-        username = 'harshitethic_bot'
+        username = 'nakshx_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
